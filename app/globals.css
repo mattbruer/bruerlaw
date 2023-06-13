@@ -13,3 +13,9 @@ main {
 header {
   padding: 10px;
 }
+
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px 0 60px;
+}
