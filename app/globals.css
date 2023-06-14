@@ -2,20 +2,150 @@
 @tailwind components;
 @tailwind utilities;
 
-main {
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 #logo {
   margin: auto;
 }
 
 header {
-  padding: 10px;
+  box-shadow: 0px 0px 5px grey;
+  padding: 10px 0 10px 0;
 }
 
 .navLinks {
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px 0 60px;
+  padding: 10px 60px 10px 60px;
+}
+
+.fixedNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  background-color: white;
+  box-shadow: 0px 0px 10px black;
+}
+
+#mobile-nav {
+  display: none;
+}
+#banner {
+  height: 32vw;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0px 0px 10px black; */
+}
+
+#banner-msg {
+  background-color: rgba(146, 141, 141, 0.712);
+  width: 80%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+  text-shadow: 0px 2px 2px black;
+}
+
+#welcome-container {
+  display: flex;
+  padding: 10px;
+}
+
+.headshot {
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+}
+
+#call-me {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background: rgb(209, 208, 212);
+  background: linear-gradient(
+    180deg,
+    rgb(174, 173, 175) 0%,
+    rgb(255, 255, 255) 85%
+  );
+}
+
+.outer-border {
+  border: 1px solid grey;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+.phone-box {
+  width: 40vw;
+  height: 100px;
+  color: grey;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.phone-number {
+  color: rgb(104, 104, 233);
+}
+
+hr {
+  width: 95%;
+  margin: 20px auto;
+}
+
+.practice-area-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #415161;
+  width: 250px;
+  height: 60px;
+  margin: 10px;
+  box-shadow: 0px 0px 5px black;
+}
+.practice-area-button:hover {
+  background-color: #88a0b7;
+}
+@media screen and (max-width: 800px) {
+  .navLinks {
+    display: none;
+  }
+  #mobile-nav {
+    display: inline;
+  }
+  header {
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+  }
+
+  .page {
+    padding-top: 115px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .headshot {
+    margin: auto;
+  }
+  #welcome-container {
+    flex-direction: column;
+  }
 }
