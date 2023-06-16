@@ -3,10 +3,15 @@
 @tailwind utilities;
 
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   box-sizing: border-box;
 }
+ol {
+  list-style: decimal;
+  padding-left: 40px;
+}
+
 #logo {
   margin: auto;
 }
@@ -14,6 +19,7 @@
 header {
   box-shadow: 0px 0px 5px grey;
   padding: 10px 0 10px 0;
+  z-index: 1000;
 }
 
 .navLinks {
@@ -26,7 +32,6 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-
   background-color: white;
   box-shadow: 0px 0px 10px black;
 }
@@ -34,8 +39,10 @@ header {
 #mobile-nav {
   display: none;
 }
-#banner {
-  height: 32vw;
+
+.banner {
+  /* style height in component props.  Default=30vw. override here with !important */
+  height: 30vw !important;
   color: white;
   display: flex;
   align-items: center;
@@ -46,11 +53,12 @@ header {
 #banner-msg {
   background-color: rgba(146, 141, 141, 0.712);
   width: 80%;
+  padding: 20px;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius: 10px;
   box-shadow: 0px 0px 5px black;
   text-shadow: 0px 2px 2px black;
@@ -90,7 +98,7 @@ header {
 .phone-box {
   width: 40vw;
   height: 100px;
-  color: grey;
+  color: rgb(12, 12, 12);
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -101,12 +109,26 @@ header {
 }
 
 .phone-number {
-  color: rgb(104, 104, 233);
+  color: rgb(21, 21, 80);
 }
 
 hr {
   width: 95%;
   margin: 20px auto;
+}
+
+#practice-area {
+  font-size: 1rem;
+  text-align: center;
+  color: grey;
+}
+
+.practice-area-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 850px;
+  margin: auto;
 }
 
 .practice-area-button {
@@ -120,9 +142,61 @@ hr {
   margin: 10px;
   box-shadow: 0px 0px 5px black;
 }
+
 .practice-area-button:hover {
   background-color: #88a0b7;
 }
+
+#contact-info {
+  margin: 25px;
+  text-align: center;
+}
+
+#contact-info-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.imageBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+.imageBox {
+  width: 25%;
+  height: 17vw;
+  position: relative;
+  text-align: center;
+}
+
+.imageBox-text-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  opacity: 0;
+
+  background-color: #ffffffbf;
+  bottom: 0;
+  margin-left: 2px;
+  width: calc(100% - 4px);
+  color: #415161;
+  transition: all 0.5s;
+}
+
+.imageBox:hover .imageBox-text-container {
+  height: 75%;
+  opacity: 1;
+}
+
+#modal {
+  background-color: white;
+}
+
 @media screen and (max-width: 800px) {
   .navLinks {
     display: none;
@@ -147,5 +221,18 @@ hr {
   }
   #welcome-container {
     flex-direction: column;
+  }
+  #contact-info-box {
+    flex-direction: column;
+  }
+  .contact-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .imageBox {
+    width: 50%;
+    height: 30vw;
   }
 }

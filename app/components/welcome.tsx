@@ -1,24 +1,26 @@
 import Image from "next/image";
 
-const Welcome = () => {
+const Welcome = ({ message, heading, showHeadshot }: any) => {
   return (
     <div id="welcome-container">
-      <div
-        className="headshot"
-        style={{
-          minWidth: "250px",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <Image
-          style={{ border: "1px solid grey", padding: "2px" }}
-          height="200"
-          width="250"
-          src="/headshot.jpeg"
-          alt="headshot"
-        />
-      </div>
+      {showHeadshot && (
+        <div
+          className="headshot"
+          style={{
+            minWidth: "250px",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            style={{ border: "1px solid grey", padding: "2px" }}
+            height="200"
+            width="250"
+            src="/headshot.jpeg"
+            alt="headshot"
+          />
+        </div>
+      )}
       <div
         style={{
           padding: "0 30px",
@@ -35,17 +37,9 @@ const Welcome = () => {
             textDecoration: "underline",
           }}
         >
-          Welcome to the Bruer Law Firm
+          {heading}
         </h2>
-        <p style={{ marginBottom: "1rem" }}>
-          With over twenty-five years of experience as a personal injury lawyer
-          in Lawrence, Kansas and the Kansas City Metropolitan area, we are
-          dedicated to helping people, families, and businesses who have been
-          harmed, in matters involving automobile collisions, personal injury,
-          negligence, wrongful death, malpractice, dangerous property, defective
-          products, insurance disputes, fraud, breach of contract, and civil
-          rights violations.{" "}
-        </p>
+        <p style={{ marginBottom: "1rem" }}>{message}</p>
         <p>All initial consultations are free.</p>
       </div>
     </div>

@@ -1,14 +1,20 @@
 import React from "react";
 
-const Banner = ({ background, message }: any) => {
+const Banner = ({
+  background,
+  message,
+  size = "cover",
+  height = "30vw",
+}: any) => {
   return (
     <div
-      id="banner"
+      className="banner"
       style={{
         background: `url(/${background})`,
-        backgroundSize: "contain",
+        backgroundSize: size,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
+        height,
       }}
     >
       <div id="banner-msg">
