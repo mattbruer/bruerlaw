@@ -10,6 +10,7 @@ const aboutList = [
   "EXPERIENCE AND RESULTS",
   "PRESENTATIONS AND MATERIALS",
 ];
+
 const About = () => {
   return (
     <div className="page">

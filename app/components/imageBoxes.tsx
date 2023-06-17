@@ -14,12 +14,12 @@ const ImageBoxes = () => {
         text="Welcome Inside The Bruer Law Firm"
       />
       <ImageBox
-        src={"/inside.jpeg"}
+        src={"/inside-bruerlaw.jpeg"}
         alt="Inside the Bruer Law Firm"
         text="Inside the Bruer Law Firm"
       />
       <ImageBox
-        src={"/bruer-lawfirm-conference-room.jpeg"}
+        src={"/bruer-law-firm-conference-room.jpeg"}
         alt="The Bruer Law Firm Conference Room"
         text="The Bruer Law Firm Conference Room"
       />

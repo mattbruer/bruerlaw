@@ -39,7 +39,9 @@ const Welcome = ({ message, heading, showHeadshot }: any) => {
         >
           {heading}
         </h2>
-        <p style={{ marginBottom: "1rem" }}>{message}</p>
+        <p id="welcome-msg" style={{ marginBottom: "1rem" }}>
+          {message}
+        </p>
         <p>All initial consultations are free.</p>
       </div>
     </div>
