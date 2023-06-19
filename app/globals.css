@@ -11,6 +11,10 @@ ol {
   list-style: decimal;
   padding-left: 40px;
 }
+ul {
+  padding-left: 40px;
+  list-style: disc;
+}
 .read p {
   text-indent: 40px;
 }
@@ -119,17 +123,23 @@ header {
 }
 
 hr {
-  width: 95%;
+  width: 80%;
   margin: 20px auto;
 }
 
-#practice-area {
+#subPage-section {
   font-size: 1rem;
   text-align: center;
   color: grey;
 }
 
-.practice-area-button-container {
+.subPage-copy p {
+  line-height: 2rem;
+  margin: 15px 40px;
+  text-indent: 25px;
+}
+
+.subPage-section-button-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -137,7 +147,7 @@ hr {
   margin: auto;
 }
 
-.practice-area-button {
+.subPage-section-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,7 +159,7 @@ hr {
   box-shadow: 0px 0px 5px black;
 }
 
-.practice-area-button:hover {
+.subPage-section-button:hover {
   background-color: #88a0b7;
 }
 

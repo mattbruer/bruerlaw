@@ -1,7 +1,7 @@
 import Banner from "./components/banner";
 import CallMe from "./components/callMe";
 import Welcome from "./components/welcome";
-import PracticeAreas from "./components/practiceAreas";
+import SubPageSection from "./components/subPageSection";
 import ContactInfo from "./components/contactInfo";
 
 const practiceAreaList = [
@@ -34,7 +34,7 @@ export default function Home() {
           rights violations."
         />
         <hr />
-        <PracticeAreas
+        <SubPageSection
           heading="Learn More About Our Practice Areas"
           list={practiceAreaList}
         />

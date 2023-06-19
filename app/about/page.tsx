@@ -3,7 +3,7 @@ import Banner from "../components/banner";
 import CallMe from "../components/callMe";
 import Welcome from "../components/welcome";
 import ContactInfo from "../components/contactInfo";
-import PracticeAreas from "../components/practiceAreas";
+import SubPageSection from "../components/subPageSection";
 
 const aboutList = [
   "AWARDS AND HONORS",
@@ -31,7 +31,7 @@ const About = () => {
        Rob resides in Lawrence with his wife and children and enjoys 
        outdoor activities and participating in endurance events."
       />
-      <PracticeAreas heading="Learn More" list={aboutList} />
+      <SubPageSection heading="Learn More" list={aboutList} />
       <ContactInfo />
     </div>
   );

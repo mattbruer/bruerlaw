@@ -13,6 +13,7 @@ const Welcome = ({ message, heading, showHeadshot }: any) => {
           }}
         >
           <Image
+            priority
             style={{ border: "1px solid grey", padding: "2px" }}
             height="200"
             width="250"

@@ -4,8 +4,16 @@ import NavLinks from "./components/navLinks";
 import Logo from "./components/logo";
 import MobileNav from "./components/mobileNav";
 
-const inter = Inter({ subsets: ["latin"] });
+//this is how you use Google Fonts
+import { Playfair_Display } from "next/font/google";
 
+const playfair = Playfair_Display({
+  weight: "400",
+  subsets: ["latin"],
+});
+
+// this was default font
+// const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   //title is important for your SEO goals.
   title: "Kansas and Missouri Injury Attorney",
@@ -22,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={playfair.className}>
         <header>
           <div
             style={{

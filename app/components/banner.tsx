@@ -17,9 +17,11 @@ const Banner = ({
         height,
       }}
     >
-      <div id="banner-msg">
-        <p>{message}</p>
-      </div>
+      {message && (
+        <div id="banner-msg">
+          <p>{message}</p>
+        </div>
+      )}
     </div>
   );
 };

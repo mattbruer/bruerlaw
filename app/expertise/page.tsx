@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../components/banner";
-import PracticeAreas from "../components/practiceAreas";
+import SubPageSection from "../components/subPageSection";
 import ContactInfo from "../components/contactInfo";
 import Welcome from "../components/welcome";
 
@@ -19,7 +19,7 @@ const page = () => {
         background={"expertise-banner-image.jpeg"}
         message="Advocating for Victims of Wrongful Conduct."
       />
-      <PracticeAreas
+      <SubPageSection
         heading="Learn More About Our Practice Areas"
         list={practiceAreaList}
       />
