@@ -18,9 +18,10 @@ export default function Home() {
     <main>
       <div className="page">
         <Banner
-          background={"justice-window.png"}
+          background={"justice-window.webp"}
           message={"We're Here To Help."}
         />
+
         <CallMe />
         <Welcome
           showHeadshot={true}

@@ -8,11 +8,11 @@ const MobileNav = () => {
   return (
     <div className="mobile-nav">
       {!navOpen && (
-        <button className="toggle-button" onClick={() => setNavOpen(true)}>
+        <div className="toggle-button" onClick={() => setNavOpen(true)}>
           <span className="toggle-button-bar"></span>
           <span className="toggle-button-bar"></span>
           <span className="toggle-button-bar"></span>
-        </button>
+        </div>
       )}
       {navOpen && (
         <div onClick={() => setNavOpen(false)} className="modal-overlay"></div>

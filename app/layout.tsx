@@ -5,9 +5,19 @@ import Logo from "./components/logo";
 import MobileNav from "./components/mobileNav";
 
 //this is how you use Google Fonts
-import { Playfair_Display } from "next/font/google";
+import { Playfair_Display, Quicksand, Source_Sans_Pro } from "next/font/google";
 
 const playfair = Playfair_Display({
+  weight: "400",
+  subsets: ["latin"],
+});
+
+const quicksand = Quicksand({
+  weight: "300",
+  subsets: ["latin"],
+});
+
+const source_Sans_Pro = Source_Sans_Pro({
   weight: "400",
   subsets: ["latin"],
 });
