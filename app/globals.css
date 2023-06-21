@@ -127,7 +127,7 @@ header {
 
 #banner-msg2 {
   color: white;
-  z-index: 1000;
+  z-index: 900;
   height: 100px;
   width: 80%;
   padding: 20px;
