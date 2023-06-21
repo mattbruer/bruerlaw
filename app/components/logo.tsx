@@ -11,7 +11,6 @@ const Logo = () => {
         height={75}
         src="/logo.png"
         alt="Bruer Law Logo"
-        style={{ width: "350px", height: "auto" }}
       />
     </Link>
   );

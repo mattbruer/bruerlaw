@@ -21,11 +21,14 @@ ul {
 }
 #logo {
   margin: 10px auto;
+  width: 350px;
+  height: auto;
 }
 
 header {
   box-shadow: 0px 0px 5px grey;
   z-index: 1000;
+  height: 115px;
 }
 
 .navLinks {
@@ -319,5 +322,17 @@ hr {
   .imageBox {
     width: 50%;
     height: 30vw;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  #logo {
+    width: 200px;
+  }
+  header {
+    height: 75px;
+  }
+  .page {
+    padding-top: 75px;
   }
 }
