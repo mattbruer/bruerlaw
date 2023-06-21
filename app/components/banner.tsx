@@ -1,39 +1,23 @@
-import React from "react";
 import Image from "next/image";
-const Banner = ({
-  background,
-  message,
-  size = "cover",
-  height = "30vw",
-}: any) => {
+
+type BannerProps = {
+  background: string;
+  message: string;
+};
+
+const Banner = ({ background, message }: BannerProps) => {
   return (
-    <>
-      {/* <div style={{ height: "250px", objectFit: "contain" }}>
-        <Image
-          src="/justice-window.png"
-          alt="e"
-          height={500}
-          width={1500}
-          style={{ width: "auto" }}
-        />
-      </div> */}
-      <div
-        className="banner"
+    <div className="banner2">
+      <Image
         style={{
-          background: `url(/${background})`,
-          backgroundSize: size,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          height,
+          objectFit: "cover",
         }}
-      >
-        {message && (
-          <div id="banner-msg">
-            <p>{message}</p>
-          </div>
-        )}
-      </div>
-    </>
+        src={`/${background}`}
+        alt="test"
+        fill={true}
+      />
+      <div id="banner-msg2">{message}</div>
+    </div>
   );
 };
 

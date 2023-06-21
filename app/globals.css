@@ -103,7 +103,14 @@ header {
   text-align: center;
   /* box-shadow: 0px 0px 10px black; */
 }
-
+.banner2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vw;
+  width: 100vw;
+}
 #banner-msg {
   background-color: rgba(146, 141, 141, 0.712);
   width: 80%;
@@ -118,6 +125,22 @@ header {
   text-shadow: 0px 2px 2px black;
 }
 
+#banner-msg2 {
+  color: white;
+  z-index: 1000;
+  height: 100px;
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  text-shadow: 0px 2px 2px black;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(146, 141, 141, 0.712);
+  position: absolute;
+  box-shadow: 0px 0px 5px black;
+}
 #welcome-container {
   display: flex;
   padding: 10px;
