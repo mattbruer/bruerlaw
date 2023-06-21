@@ -180,7 +180,7 @@ header {
 
 .phone-box {
   width: 40vw;
-  height: 100px;
+  padding: 2vw;
   color: rgb(12, 12, 12);
   background-color: white;
   display: flex;
