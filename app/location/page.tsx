@@ -10,7 +10,6 @@ const page = () => {
   return (
     <div className="page">
       <Banner
-        height="23vw"
         message="Conveniently Located in Downtown Lawrence."
         background="location-banner-image.jpeg"
       />
