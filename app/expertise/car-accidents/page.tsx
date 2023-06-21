@@ -7,7 +7,6 @@ const page = () => {
     <div className="page">
       <Banner
         message="Automobile Drivers Must Use The Highest Degree Of Care."
-        size="cover"
         background="car-accidents-banner-image.jpeg"
       />
       <CallMe />
