@@ -28,7 +28,6 @@ ul {
 header {
   box-shadow: 0px 0px 5px grey;
   z-index: 1000;
-  height: 115px;
 }
 
 .navLinks {
@@ -325,14 +324,25 @@ hr {
   }
 }
 
-@media screen and (max-width: 465px) {
+@media screen and (max-width: 565px) {
   #logo {
-    width: 200px;
+    width: 250px;
   }
   header {
-    height: 75px;
+    height: 100px;
   }
   .page {
-    padding-top: 75px;
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #logo {
+    width: 150px;
+  }
+  header {
+    height: 70px;
+  }
+  .page {
+    padding-top: 70px;
   }
 }
