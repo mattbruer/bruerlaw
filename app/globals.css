@@ -51,8 +51,9 @@ header {
 .mobile-nav-links {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 80%;
+  text-shadow: 1px 1px 1px rgb(140, 135, 135);
 }
 
 .toggle-button {
