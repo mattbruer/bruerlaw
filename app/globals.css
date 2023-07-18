@@ -39,6 +39,7 @@ header {
 .fixedNav {
   position: fixed;
   top: 0;
+  z-index: 2000;
   width: 100%;
   background-color: white;
   box-shadow: 0px 0px 10px black;
@@ -285,6 +286,45 @@ hr {
   background-color: white;
 }
 
+.contact-box {
+  width: 40vw;
+  box-shadow: 0px 0px 5px black;
+  margin: 20px;
+  padding: 5px;
+  background-color: lightgray;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+form button {
+  border: 1px solid grey;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white !important;
+  box-shadow: 0px 0px 2px black;
+}
+
+input,
+textarea {
+  box-shadow: inset 0px 0px 3px black;
+  border-radius: 5px;
+}
+.contact-box h2 {
+  color: white;
+  font-size: 1.5rem;
+}
+.contact-map-container {
+  display: flex;
+
+  justify-content: center;
+  margin: auto;
+}
+
+.contact-box textarea {
+  height: 200px;
+  width: 100%;
+}
+
 @media screen and (max-width: 800px) {
   .navLinks {
     display: none;
@@ -322,6 +362,16 @@ hr {
   .imageBox {
     width: 50%;
     height: 30vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact-box {
+    width: calc(100% - 2px);
+  }
+  .contact-map-container {
+    flex-direction: column;
+    padding: 0px 60px;
   }
 }
 
