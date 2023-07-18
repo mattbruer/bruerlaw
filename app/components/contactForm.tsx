@@ -33,6 +33,7 @@ const ContactForm = () => {
   return (
     <div className="contact-box ">
       <iframe
+        title="contact form"
         src="https://docs.google.com/forms/d/e/1FAIpQLSffEPjurKCbx1iDQUx19bzy4CC5tUHnTzsntLBOJ_7KYlPBoQ/viewform?embedded=true"
         width="100%"
         height="200"

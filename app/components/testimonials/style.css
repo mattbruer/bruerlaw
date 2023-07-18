@@ -5,11 +5,12 @@
   background-size: contain;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .testimonial {
+  font-size: 14px;
   padding: 20px;
   min-width: 300px;
   max-width: 40%;
@@ -17,6 +18,13 @@
   color: white;
   border: 1px solid grey;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 5px 5px 5px black;
   background-color: #415161;
+  text-shadow: 1px 1px 1px black;
+}
+
+.from {
+  margin-top: 10px;
+  font-size: smaller;
+  text-align: center;
 }
