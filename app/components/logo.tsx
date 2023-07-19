@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,10 +6,11 @@ const Logo = () => {
     <Link href="/">
       <Image
         id="logo"
-        width={350}
-        height={75}
+        width="350"
+        height="75"
         src="/logo.png"
         alt="Bruer Law Logo"
+        style={{ height: "auto" }}
       />
     </Link>
   );

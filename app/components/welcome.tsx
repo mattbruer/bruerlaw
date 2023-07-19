@@ -15,7 +15,6 @@ const Welcome = ({ message, heading, showHeadshot }: any) => {
           <Image
             priority
             style={{
-              // width: "250px",
               height: "auto",
               border: "1px solid grey",
               padding: "2px",

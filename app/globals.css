@@ -19,9 +19,9 @@ ul {
 .read p {
   text-indent: 40px;
 }
+
 #logo {
   margin: 10px auto;
-  width: 350px;
   height: auto;
 }
 
@@ -213,6 +213,13 @@ hr {
   text-indent: 25px;
 }
 
+.subPage-copy h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
 .subPage-section-button-container {
   display: flex;
   flex-wrap: wrap;
@@ -235,6 +242,29 @@ hr {
 
 .subPage-section-button:hover {
   background-color: #88a0b7;
+}
+
+.read h1 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+.read h2 {
+  text-decoration: underline;
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+
+.read ul {
+  margin-bottom: 40px;
+}
+
+.read li {
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: smaller;
+  color: #415161;
 }
 
 #contact-info {
@@ -326,6 +356,16 @@ textarea {
   width: 100%;
 }
 
+.answers li {
+  margin-bottom: 35px;
+  list-style: none;
+}
+
+.answers li::before {
+  content: "•";
+  font-size: 10px;
+  margin: 5px;
+}
 @media screen and (max-width: 800px) {
   .navLinks {
     display: none;
